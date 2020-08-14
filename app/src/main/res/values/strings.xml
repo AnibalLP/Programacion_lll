@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dos Activitys</string>
+
+    <string name="titulo">dos activitys</string>
+    <string name="nombre">ingresa tu nombre</string>
+    <string name="edad">ingresa edad</string>
+    <string name="enviarDatos">enviar datos</string>
+    <string name="volver">pantalla volver</string>
+</resources>
