@@ -14,4 +14,5 @@
     <string name="porcentaje">Porcentaje</string>
     <string name="exponenciacion">Exponenciacion</string>
     <string name="Modulo">Residuo de Divicion</string>
+    <string name="result">"Resultado: "</string>
 </resources>

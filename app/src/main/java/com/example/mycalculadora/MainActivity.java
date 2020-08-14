@@ -8,14 +8,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
 
     public void calcular(View view) {
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         final RadioButton porciento = (RadioButton) findViewById(R.id.rbporcentaje);
         final RadioButton modulo = (RadioButton) findViewById(R.id.rbreciduo);
         final RadioButton exponente = (RadioButton) findViewById(R.id.rbexponenciaion);
+
 
         if (suma.isChecked()) {
             if (!etn1.getText().toString().isEmpty() && !etn2.getText().toString().isEmpty()) {
@@ -102,7 +105,22 @@ public class MainActivity extends AppCompatActivity {
         Integer result;
 
         result = num1 + num2;
+
         Toast.makeText(getApplicationContext(), "Resultado de la Operación: " + result.toString(), Toast.LENGTH_SHORT).show();
+
+       /* AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+        builder.setMessage("Resultado de la Operación: " + result.toString())
+                .setCancelable(false)
+                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+                });
+        AlertDialog dialog = builder.create();
+        dialog.setIcon(R.drawable.ic_baseline_info_24);
+        dialog.setTitle("Resultado");
+        dialog.show();*/
     }
 
 
@@ -111,6 +129,7 @@ public class MainActivity extends AppCompatActivity {
         int num2 = Integer.parseInt(n2);
 
         Integer result = num1 - num2;
+
         Toast.makeText(getApplicationContext(), "Resultado de la Operación: " + result.toString(), Toast.LENGTH_SHORT).show();
     }
 
