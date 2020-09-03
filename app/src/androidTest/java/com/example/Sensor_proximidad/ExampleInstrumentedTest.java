@@ -1,4 +1,4 @@
-package com.example.mycalculadora;
+package com.example.Sensor_proximidad;
 
 import android.content.Context;
 
