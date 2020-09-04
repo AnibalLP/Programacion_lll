@@ -4,154 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/titulo"
-        android:textSize="30sp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
+    tools:context=".Reproductor_Musical">
+    <ImageView
+        android:id="@+id/ivPortada"
+        android:layout_width="413dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="41dp"
+        android:contentDescription="@string/app_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.01999998" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="364dp"
-        android:layout_height="247dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.37"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.18">
-
-
-        <Space
-            android:layout_width="20sp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <RadioButton
-            android:id="@+id/rbsuma"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/suma" />
-
-        <Space
-            android:layout_width="20sp"
-            android:layout_height="wrap_content"
-            android:layout_weight="8" />
-
-        <RadioButton
-            android:id="@+id/rbresta"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/resta" />
-
-        <Space
-            android:layout_width="20sp"
-            android:layout_height="wrap_content"
-            android:layout_weight="8" />
-
-        <RadioButton
-            android:id="@+id/rbmulti"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/multiplicacion" />
-
-        <Space
-            android:layout_width="20sp"
-            android:layout_height="wrap_content"
-            android:layout_weight="8" />
-
-        <RadioButton
-            android:id="@+id/rbdivision"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/division" />
-
-        <Space
-            android:layout_width="20sp"
-            android:layout_height="wrap_content"
-            android:layout_weight="8" />
-
-        <RadioButton
-            android:id="@+id/rbexponenciaion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/exponenciacion" />
-
-        <Space
-            android:layout_width="20sp"
-            android:layout_height="wrap_content"
-            android:layout_weight="8" />
-
-        <RadioButton
-            android:id="@+id/rbreciduo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Modulo" />
-
-        <Space
-            android:layout_width="20sp"
-            android:layout_height="wrap_content"
-            android:layout_weight="8" />
-
-        <RadioButton
-            android:id="@+id/rbporcentaje"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/porcentaje" />
-
-    </RadioGroup>
-
-    <EditText
-        android:id="@+id/etnum1"
-        android:layout_width="250dp"
+        app:srcCompat="@drawable/lp"/>
+    <Button
+        android:id="@+id/btIniciar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/primero"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="32dp"
+        android:text="@string/iniciar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-        app:layout_constraintVertical_bias="0.060000002"
-        android:autofillHints="" />
-
-    <EditText
-        android:id="@+id/etnum2"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/segundo"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etnum1"
-        app:layout_constraintVertical_bias="0.07999998"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/ivPortada" />
 
     <Button
-        android:id="@+id/btncalcular"
-        android:layout_width="wrap_content"
+        android:id="@+id/btDetener"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="calcular"
-        android:text="@string/calcular"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="24dp"
+        android:text="@string/parar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etnum2"
-        app:layout_constraintVertical_bias="0.137" />
-
+        app:layout_constraintTop_toBottomOf="@+id/btIniciar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
