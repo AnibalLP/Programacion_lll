@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Uso de Camara</string>
+    <string name="app_name">Video</string>
+    <string name="titulo">Reproductor de video</string>
 </resources>
