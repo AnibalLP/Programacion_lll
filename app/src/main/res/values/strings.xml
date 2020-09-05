@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Reproductor de Musica</string>
+    <string name="app_name">Reproductor 2</string>
     <string name="reproducir">Play</string>
     <string name="detener">Stop</string>
     <string name="siguiente">Next</string>
