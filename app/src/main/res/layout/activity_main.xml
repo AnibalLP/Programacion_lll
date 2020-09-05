@@ -5,36 +5,75 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Reproductor_Musical">
+
+
     <ImageView
-        android:id="@+id/ivPortada"
-        android:layout_width="413dp"
-        android:layout_height="210dp"
-        android:layout_marginTop="41dp"
+        android:id="@+id/imageView"
+        android:layout_width="381dp"
+        android:layout_height="376dp"
+        android:layout_marginTop="16dp"
         android:contentDescription="@string/app_name"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/lp"/>
+        app:srcCompat="@drawable/i1" />
     <Button
-        android:id="@+id/btIniciar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/iniciar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:id="@+id/btn_play"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="410dp"
+        android:background="@drawable/play"
+        android:onClick="play"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivPortada" />
+        app:layout_constraintTop_toTopOf="parent"
+        ></Button>
 
     <Button
-        android:id="@+id/btDetener"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/parar"
+        android:id="@+id/btn_stop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="410dp"
+        android:background="@drawable/stop"
+        android:onClick="stop"
+        app:layout_constraintStart_toEndOf="@+id/btn_play"
+        app:layout_constraintTop_toTopOf="parent">
+    </Button>
+    <Button
+        android:id="@+id/btn_repetir"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="410dp"
+        android:background="@drawable/repeat"
+        android:onClick="repetir"
+        app:layout_constraintStart_toEndOf="@+id/btn_stop"
+        app:layout_constraintTop_toTopOf="parent" >
+    </Button>
+    <Button
+        android:id="@+id/btn_anterior"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="410dp"
+        android:background="@drawable/previous"
+        android:onClick="anterior"
+        app:layout_constraintStart_toEndOf="@+id/btn_repetir"
+        app:layout_constraintTop_toTopOf="parent"    >
+    </Button>
+    <Button
+        android:id="@+id/btn_siguiente"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="410dp"
+        android:background="@drawable/next"
+        android:onClick="siguiente"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btIniciar" />
+        app:layout_constraintStart_toEndOf="@+id/btn_anterior"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
