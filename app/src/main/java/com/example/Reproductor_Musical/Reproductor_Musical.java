@@ -5,6 +5,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 // AQUI SE PIDE IMPLEMENTAR ... PEDIR METODO
 public class Reproductor_Musical extends AppCompatActivity implements View.OnClickListener {
