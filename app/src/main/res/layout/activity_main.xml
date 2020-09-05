@@ -4,154 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/titulo"
-        android:textSize="30sp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.01999998" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="364dp"
-        android:layout_height="247dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.37"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.18">
-
-
-        <Space
-            android:layout_width="20sp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <RadioButton
-            android:id="@+id/rbsuma"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/suma" />
-
-        <Space
-            android:layout_width="20sp"
-            android:layout_height="wrap_content"
-            android:layout_weight="8" />
-
-        <RadioButton
-            android:id="@+id/rbresta"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/resta" />
-
-        <Space
-            android:layout_width="20sp"
-            android:layout_height="wrap_content"
-            android:layout_weight="8" />
-
-        <RadioButton
-            android:id="@+id/rbmulti"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/multiplicacion" />
-
-        <Space
-            android:layout_width="20sp"
-            android:layout_height="wrap_content"
-            android:layout_weight="8" />
-
-        <RadioButton
-            android:id="@+id/rbdivision"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/division" />
-
-        <Space
-            android:layout_width="20sp"
-            android:layout_height="wrap_content"
-            android:layout_weight="8" />
-
-        <RadioButton
-            android:id="@+id/rbexponenciaion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/exponenciacion" />
-
-        <Space
-            android:layout_width="20sp"
-            android:layout_height="wrap_content"
-            android:layout_weight="8" />
-
-        <RadioButton
-            android:id="@+id/rbreciduo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Modulo" />
-
-        <Space
-            android:layout_width="20sp"
-            android:layout_height="wrap_content"
-            android:layout_weight="8" />
-
-        <RadioButton
-            android:id="@+id/rbporcentaje"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/porcentaje" />
-
-    </RadioGroup>
-
-    <EditText
-        android:id="@+id/etnum1"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/primero"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-        app:layout_constraintVertical_bias="0.060000002"
-        android:autofillHints="" />
-
-    <EditText
-        android:id="@+id/etnum2"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/segundo"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etnum1"
-        app:layout_constraintVertical_bias="0.07999998"
-        android:autofillHints="" />
+    tools:context="com.example.Uso_Camara.Uso_Camara">
 
     <Button
-        android:id="@+id/btncalcular"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="calcular"
-        android:text="@string/calcular"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/btTomarFoto"
+        android:layout_width="164dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/camara"
+        android:text=""
+        android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.747"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etnum2"
-        app:layout_constraintVertical_bias="0.137" />
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/ivMostrarFoto"
+        android:layout_width="389dp"
+        android:layout_height="392dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gorillazz"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

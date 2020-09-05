@@ -1,18 +1,3 @@
 <resources>
-    <string name="app_name">Calculadora</string>
-    <string name="titulo">Calculadora</string>
-    <string name="numero1">num tres</string>
-    <string name="numero2">num dos</string>
-    <string name="suma">suma</string>
-    <string name="resta">resta</string>
-    <string name="multiplicacion">multiplicacion</string>
-    <string name="division">division</string>
-    <string name="calcular">Calcular</string>
-    <string name="titulo2">respuesta es:</string>
-    <string name="primero">Ingresa Primer Numero</string>
-    <string name="segundo">Ingresa Segundo Numero</string>
-    <string name="porcentaje">Porcentaje</string>
-    <string name="exponenciacion">Exponenciacion</string>
-    <string name="Modulo">Residuo de Divicion</string>
-    <string name="result">"Resultado: "</string>
+    <string name="app_name">Uso de Camara</string>
 </resources>
