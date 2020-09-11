@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //enlace de la variable textview con la vista
-        final TextView texto=(TextView)findViewById(R.id.tvsensor);
+        final TextView texto=(TextView)findViewById(R.id.tvSensor);
         //aplicando el servicio
         sensorManager=(SensorManager)getSystemService(SENSOR_SERVICE);
         //el tipo de sensor que se utilizara
